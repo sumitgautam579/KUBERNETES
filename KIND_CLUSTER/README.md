@@ -45,6 +45,8 @@ nodes:
   image: kindest/node:v1.31.2
 - role: worker
   image: kindest/node:v1.31.2
+# also need to add the container port [port mapping]
+
 ```
 Create the cluster using the configuration file:
 
