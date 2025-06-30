@@ -27,39 +27,48 @@ Now open cmd and check installation.
 
 
   output:
-  Docker version 27.0.3, build 7d4bcd8
+  Docker version 28.2.2, build 7d4bcd8
 ```
 successfully installed docker on windows.
 
 ## Step 2: Minikube Installation
 
-Now open poweshell and run below 2 commands.
-```bash
-New-Item -Path 'c:\' -Name 'minikube' -ItemType Directory -Force
-Invoke-WebRequest -OutFile 'c:\minikube\minikube.exe' -Uri 'https://github.com/kubernetes/minikube/releases/latest/download/minikube-windows-amd64.exe' -UseBasicParsing
+Run the minikube-installer.exe file in the system after checking the minimum configurations
 
+```minimum config
+2 CPUs or more
+2GB of free memory
+20GB of free disk space
 ```
+Add Minikube to your PATH (so you don’t have to type the full path every time):
+
+Open Start → Edit the system environment variables → Environment Variables…
+
+Under User variables (or System variables), find the Path entry and click Edit…
+
+New → enter:
+
+makefile
+Copy
+Edit
 ```bash
-$oldPath = [Environment]::GetEnvironmentVariable('Path', [EnvironmentVariableTarget]::Machine)
-if ($oldPath.Split(';') -inotcontains 'C:\minikube'){
-  [Environment]::SetEnvironmentVariable('Path', $('{0};C:\minikube' -f $oldPath), [EnvironmentVariableTarget]::Machine)
-}
+installedpath\Minikube
 ```
+
 check the installation by 
 ```bash
 minikube version
 
-
 output:
-minikube version: v1.33.1
+minikube version: v1.36.0
 commit: 5883c09216182566a63dff4c326a6fc9ed2982ff
 ```
-
 ## Step 3: Run Minikube 
 - Open powershell run below cmd to create brand new cluster.
 ```bash
 minikube start
 ```
+
 ## Step 4: Install kubectl With Curl
 - Open powershell run below command to interact with your brand new cluster.
 - Install curl if not availabe bydefault it is present.
