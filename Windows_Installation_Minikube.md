@@ -35,7 +35,8 @@ successfully installed docker on windows.
 
 Run the minikube-installer.exe file in the system after checking the minimum configurations
 
-```minimum config
+```
+minimum config:
 2 CPUs or more
 2GB of free memory
 20GB of free disk space
@@ -48,9 +49,8 @@ Under User variables (or System variables), find the Path entry and click Editâ€
 
 New â†’ enter:
 
-makefile
-Copy
-Edit
+makefile | copy path | edit 
+
 ```bash
 installedpath\Minikube
 ```
@@ -68,6 +68,14 @@ commit: 5883c09216182566a63dff4c326a6fc9ed2982ff
 ```bash
 minikube start
 ```
+Minikube runs Kubernetes in a VM or container. On Windows your common options are:
+
+Docker (if you have Docker Desktop installed):
+ 
+ ```bash
+minikube start --driver=docker
+```
+Suggestion: Restart the Docker service
 
 ## Step 4: Install kubectl With Curl
 - Open powershell run below command to interact with your brand new cluster.
