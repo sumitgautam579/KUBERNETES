@@ -1,4 +1,4 @@
-# KIND Cluster Setup Guide
+# KIND Cluster Setup Guide using AWS EC2 instance 
 
 ## 1. Installing KIND and kubectl
 Install KIND and kubectl using the provided script:
