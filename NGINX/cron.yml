@@ -4,9 +4,9 @@ metadata:
   name: minute-backup
   namespace: nginx
 
-spec:
+spec:                   # spec for the cron jobs [means- scheduled job]
   schedule: "* * * * *"
-  jobTemplate:
+  jobTemplate:           # template for the cron jobs [means- scheduled job]
     spec:
       template:
         metadata:
@@ -14,8 +14,8 @@ spec:
           labels:
             app: minute-backup
 
-        spec:
-          containers:
+        spec:          # spec for the running container 
+          containers:       
           - name: backup-container
             image: busybox
             command:
