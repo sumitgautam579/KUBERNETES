@@ -7,10 +7,9 @@ This is a simple notes app built with React and Django.
 3. React
 
 ## Installation
-1. Clone the repository (under which you can find the to-do-notes-app )
+1. Clone the repository
 ```
-git clone https://github.com/KUBERNETES
-
+git clone https://github.com/LondheShubham153/django-notes-app.git
 ```
 
 2. Build the app
