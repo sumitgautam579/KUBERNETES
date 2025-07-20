@@ -117,6 +117,10 @@ Copy the token for use in the Dashboard login.
 
 Access the Dashboard
 Start the Dashboard using kubectl proxy:
+```bash
+kubectl proxy  #for local host
+```
+
 using public ip of the instance > IP:port
 
 ```bash
