@@ -117,10 +117,10 @@ Copy the token for use in the Dashboard login.
 
 Access the Dashboard
 Start the Dashboard using kubectl proxy:
+using public ip of the instance > IP:port
 
 ```bash
-
-kubectl proxy
+kubectl proxy --port=8002 --address=0.0.0.0 --accept-hosts='.*'
 ```
 Open the Dashboard in your browser:
 
