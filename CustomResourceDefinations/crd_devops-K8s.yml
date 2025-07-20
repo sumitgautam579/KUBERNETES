@@ -1,0 +1,37 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: devopsKubeCustom.kubeCustom
+spec:
+  group: kubeCustom
+  names: 
+    plural: devopsKubes
+    singular: devopsKube
+    kind: CustomDevOpsKube  # resource name 
+    shortNames:
+      - devops
+      - KubeCus
+  scope: Namespaced
+  versions:
+  - name: v1
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec: 
+            type: object
+            properties: 
+              name:
+                type: string
+                description: "This is the name of the DevOps K8s crs"
+              duration:
+                type: string
+                description: "This is the duration of the DevOps K8s crs"
+              mode:
+                type: string
+              platform:
+                type: string
+                description: "This is the platform of the DevOps K8s crs usage" 
+

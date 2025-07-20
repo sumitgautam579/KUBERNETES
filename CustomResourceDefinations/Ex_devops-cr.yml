@@ -1,0 +1,9 @@
+kind: CustomDevOpsKube
+apiVersion: kubeCustom/v1
+metadata:
+  name: devops_discription
+spec:
+  name: DevOps-K8s_crd
+  durations: till the repo exists
+  platform: aws-ec2 instance
+  mode: github-repo usage
