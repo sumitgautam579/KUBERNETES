@@ -108,5 +108,5 @@ Feel free to submit issues or pull requests—add new examples, fix typos, or im
 
 ## 📄 License
 
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+@copyright *Sumit Gautam DEVOPS_Engineer*
 
