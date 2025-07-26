@@ -8,7 +8,7 @@ Welcome to your hands-on Kubernetes learning playground! This repository contain
 
 ```plaintext
 KUBERNETES/                          # Root directory
-├── assets/                          # Diagrams, images, and YAML snippets
+├── assets/                      
 ├── KIND_CLUSTER/                    # Kind cluster configuration and manifests
 ├── Practice_K8s_using_Kind.md       # Guided exercises for Kind-based clusters
 ├── Ubuntu_minikube_installation.md  # Minikube setup instructions on Ubuntu
