@@ -8,7 +8,7 @@ Welcome to your hands-on Kubernetes learning playground! This repository contain
 
 ```plaintext
 KUBERNETES/                          # Root directory
-├── assets/                          # Diagrams, images, and YAML snippets
+├── assets/                      
 ├── KIND_CLUSTER/                    # Kind cluster configuration and manifests
 ├── Practice_K8s_using_Kind.md       # Guided exercises for Kind-based clusters
 ├── Ubuntu_minikube_installation.md  # Minikube setup instructions on Ubuntu
@@ -108,5 +108,5 @@ Feel free to submit issues or pull requests—add new examples, fix typos, or im
 
 ## 📄 License
 
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+@copyright *Sumit Gautam DEVOPS_Engineer*
 
